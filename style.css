@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding: 0;
+}
+.container{
+  background-color: lightblue;
+  color:white;
+}
+
+.container,.input-container,.task-container{
+  border: 1px solid black;
+  
+}
+#heading{
+  font-size: 30px;
+
+  display: inline-block;
+}
+.input-container{
+  height: 20vh;
+  color: black;
+  text-align:center;
+  width: 100%;
+}
+.task-container{
+  height: 80vh;
+}
+.input-task{
+  font-size: 1rem;
+  height:4rem;
+  width:30%;
+  display: block;/*WE GIVE MARGIN AUTO IF ELEMENT IS BLOCK*/
+  margin:auto;
+  margin-top:20px;
+}
+.task-container li{
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: rgb(138, 202, 223);
+  width: 40%; /*parent ka 40% */
+  text-align: center;/* to arrange text in center */
+  margin:10px auto 0px auto;/*top right bottom left  for centering the element*/ 
+}
+
+.list-container{
+  padding-left: 0px;
+}
+
+@media screen and (max-width:768px) {/* this css will execute if size of the screen with is less than 768px*/
+  
+  .input-task{
+    width:70%;}
+    .task-container li{
+      width:60%;
+    }
+    #heading{
+      font-size: 20px;
+      font-style: italic;
+      padding-top: 10px;
+      display: inline-block;
+    }
+}
